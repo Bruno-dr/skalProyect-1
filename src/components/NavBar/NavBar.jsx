@@ -1,5 +1,6 @@
 import './NavBar.css';
 import logoImg from '/src/assets/logo1.jpeg'
+import CartWidget from '../CartWdget/CartWidget';
 
 function NavBar() {
   return (
@@ -38,11 +39,7 @@ function NavBar() {
                 </a>
               </li>
             </ul>
-            <div className="d-flex">
-              <a href="#" className="btn btn-outline-dark me-2">
-                <i className="fas fa-shopping-cart"></i>
-              </a>
-            </div>
+            <CartWidget/>
           </div>
         </div>
       </nav>
