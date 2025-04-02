@@ -1,6 +1,8 @@
 import './NavBar.css';
 import logoImg from '/src/assets/logo1.jpeg'
 import CartWidget from '../CartWdget/CartWidget';
+import { Link } from 'react-router';
+
 
 function NavBar() {
   return (
@@ -23,11 +25,13 @@ function NavBar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-5">
-              <li className="nav-item">
+              <Link to="/">
+                <li className="nav-item">
                 <a className="nav-link active fs-5" aria-current="page" href="#">
                   Inicio
                 </a>
-              </li>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link fs-5" href="#">
                   Productos
