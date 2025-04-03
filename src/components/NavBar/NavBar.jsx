@@ -27,12 +27,38 @@ function NavBar() {
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-5">
               <Link to="/">
                 <li className="nav-item">
-                <a className="nav-link active fs-5" aria-current="page" href="#">
+                <p className="nav-link active fs-5" aria-current="page" href="#">
                   Inicio
-                </a>
+                </p>
                 </li>
               </Link>
-              <li className="nav-item">
+
+              <Link to="/categoria/tabla">
+                <li className="nav-item">
+                <p className="nav-link active fs-5" aria-current="page" href="#">
+                  tabla 
+                </p>
+                </li>
+              </Link>
+              <Link to="/categoria/cuadro">
+                <li className="nav-item">
+                <p className="nav-link active fs-5" aria-current="page" href="#">
+                  cuadro
+                </p>
+                </li>
+              </Link>
+              <Link to="/categoria/vinilo">
+                <li className="nav-item">
+                <p className="nav-link active fs-5" aria-current="page" href="#">
+                   vinilo 
+                </p>
+                </li>
+              </Link>
+             
+              
+
+              { /*
+                <li className="nav-item">
                 <a className="nav-link fs-5" href="#">
                   Productos
                 </a>
@@ -42,6 +68,7 @@ function NavBar() {
                   Contacto
                 </a>
               </li>
+              */ }
             </ul>
             <CartWidget/>
           </div>

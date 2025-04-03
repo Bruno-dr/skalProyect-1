@@ -5,7 +5,7 @@ import './Item.css';
 
 
 
-function Item( {producto, filtrarProducto} ) {
+function Item( {producto} ) {
 
     const {nombre, precio, stock, img,id} = producto //destructuring 
 
